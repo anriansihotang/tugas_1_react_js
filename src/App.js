@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import MenuUtama from './Page/MenuUtama';
+import MenuProduct from './Page/MenuProduct';
+import MenuTentangKami from './Page/MenuTentangKami';
+import MenuKontak from './Page/MenuKontak';
 
-function App() {
+const Header = () => {
+	return (
+		<h1>Ini Halaman Untuk Header</h1>
+	);
+}
+
+const Footer = () => {
+	return (
+		<h1>Ini Halaman Untuk Footer</h1>
+	);
+}
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+	<div>
+		<Header />
+		<MenuUtama />
+		<MenuProduct />
+		<MenuTentangKami />
+		<MenuKontak />
+		<Footer />
+	</div>
   );
 }
 
